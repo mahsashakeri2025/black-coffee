@@ -1,0 +1,47 @@
+body{
+    background-color: #191919;
+}
+:root{
+    --colorOne:#f9fad9;
+}
+header{
+    height:90px;
+    border: 1px solid red;
+    position: relative;
+    gap: 20px;
+    .logo{
+        width: 10%;
+        height:100%;
+        position: absolute;
+        right: 20px;
+    border: 1px solid red;
+    }
+    >nav{
+        width: 50%;
+        height: 100%;
+        border: 1px solid red;
+        >ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+    >section{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(--colorOne);
+        >i{
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+            border: ;
+        }
+    }
+}

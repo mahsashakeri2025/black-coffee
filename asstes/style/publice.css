@@ -1,0 +1,38 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    width: 100%;
+    height: 100vh;
+    direction: rtl;
+    .row{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        text-decoration: none;
+        color: var(--colorOne);
+        &:visited{
+            color:inherit;
+        }
+    }
+    li{
+        list-style-type: none;
+    }
+    svg , .svg{
+        width: 25px;
+        height: 25px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;    
+    }
+}
