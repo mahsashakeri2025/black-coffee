@@ -86,6 +86,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 0 5%;
     gap: 30px;
     >.part-one{
@@ -155,6 +156,62 @@ main{
             &:hover{
                background-color:#fba5239c;
             }
+        }
+    }
+    >.part-two{
+        background: linear-gradient(0deg,rgb(25, 25, 25) 20%, rgb(54, 54, 54) 100%);
+        width: 80%;
+        display: grid;
+        border-radius: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap:  20px 10px;
+        padding: 20px 10px;
+
+        >figure{
+            position: relative;
+            border-radius: 20px;
+            width: 200px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            >img{
+                width: 80%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+            >figcaption{
+                color: var(--colorOne);
+                text-align: center;
+            }
+
+            >p:nth-of-type(1){
+                 text-decoration: line-through;
+            }
+            >p:nth-of-type(2){
+                color: var(--colorTwo)
+            }
+        }
+         >figure:hover{
+            &::after{
+                opacity: 0.4;
+                box-shadow:0 0 20px 10px var(--boxShadow);
+            }
+         }
+        >figure::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #0e0e0e;
+            opacity: 0;
+            border-radius: 10px;
+            transition: ease-out 1s;
         }
     }
 }
