@@ -1,10 +1,18 @@
+@font-face {
+    font-family: "mahsa";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../font/fonts/98434d23c644432580c180bd8792271e.ttf) format('truetype');
+}
 *,*::after,*::before{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: mahsa, Tahoma, serif;
+
 }
 body{
-    font-size: 18px;
+    font-size: 14px;
     width: 100%;
     height: 100vh;
     direction: rtl;
@@ -18,19 +26,23 @@ body{
     a{
         text-decoration: none;
         color: var(--colorOne);
-        &:visited{
-            color:inherit;
-        }
     }
+   p , h4{
+    color: var(--colorOne);
+   }
     li{
         list-style-type: none;
     }
-    svg , .svg{
-        width: 25px;
-        height: 25px;
-        overflow: hidden;
-        border-radius: 50%;
-    }
+    i{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            font-size: 28px;
+            border-radius: 50%;
+            color: var(--colorOne);
+        }
     .logo{
         width: 80px;
         height: 80px;    
