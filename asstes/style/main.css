@@ -98,6 +98,8 @@ main{
             img{
                 position: absolute;
                 object-fit: contain;
+                
+                
                 &:nth-of-type(1){
                     top: 0;
                     left: 0;
@@ -140,6 +142,7 @@ main{
                 right:20%;
                 width: 70%;
                 >p{
+                    margin-top: 5px;
                     font-size: 10px;
                 }
              }
@@ -432,6 +435,146 @@ main{
             margin: 0 auto;
             &:hover{
                   box-shadow:0 0 20px 10px var(--boxShadow);
+            }
+        }
+    }
+    .part-eight{
+        position: relative;
+        width: 70%;
+        height: 450px;
+            border-radius: 20px;
+        background: linear-gradient(0deg,rgb(25, 25, 25) 20%, rgb(73, 73, 73) 80%);
+        img{
+            position: absolute;
+            display: flex;
+            object-fit: cover;
+            width: 50%;
+            height: 120%;
+            left: 0;
+            top: -80px;
+        }
+        form{
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            >label , >div{
+                color: #f9fad9;
+                margin-bottom: 5px;
+                font-size: 12px;
+            }
+            >input , >textarea , >button{
+                width: 100%;
+                margin-bottom: 15px;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.1);
+                color: var(--colorOne);
+                font-size: 14px;
+                &:focus{
+                    outline: none;
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+            >button{
+                background-color: #fba623;
+                &:hover{
+                    background-color:#c97a03b2;
+                }
+            }
+            #accept{
+                width: 20px;
+            }
+            .accept{
+                width: 250px;
+                display: flex;
+            }
+            div{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .part-nine{
+        width: 70%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+       div:nth-of-type(1){
+        gap: 20px;
+         img{
+            width: 70px;
+            height: 70px;
+        }
+       }
+       input{
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            color: #f9fad9;
+            background-color: #fba623;
+            &:hover{
+                background-color: #a86602;
+            }
+            
+        }
+    }
+}
+footer{
+    width: 100%;
+    height: 500px;
+    margin: 20px 0;
+    background-image: url(../images/background3.webp);
+    background-size:100%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+    section{
+        &:nth-of-type(1){
+            padding: 0 10%;
+            width: 60%;height: 50%;
+            display: flex;justify-content: space-evenly;align-items: center; gap: 30px;
+            >div{
+                width: 33%;
+                height: 100%;
+                border: 1px solid red;
+                h3{
+                    width: 100%;
+                    height: 20%;
+                    font-size: 14px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #f9fad9;
+                }
+                 >ul{
+                width: 100%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                >li{
+                    display: flex;
+                    width: 100%;
+                    height: 25px;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 12px;
+                }
+                }
+                &:nth-of-type(3){
+                    width: 50%;
+                }
             }
         }
     }
